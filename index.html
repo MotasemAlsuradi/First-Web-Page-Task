@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Limo</title>
+        <!-- Main Template CSS File -->
+        <link rel="stylesheet" href="styles.css">
+        <!-- Google Fonts - Poppins -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <!-- Font-Awesome Lib -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="loge"></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#cars">Cars</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="register-login">
+                    <a href="login.html">Login</a>
+                    <strong>/</strong>
+                    <a href="#">Register</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Start-landing Section -->
+        <section class="landing">
+            <div class="container">
+                <div class="text">
+                    <p>Find Your Car & Limousine</p>
+                    <p >We have many best rental car collections.</p>
+                </div>
+                <div class="getCar">
+                    <form action="">
+                        <div class="labels">
+                            <label for="carss">Vehicle type</label>
+                            <select name="carss" id="carss" style="font-size: 16px;">
+                                <option value="">Select Vehicle type</option>
+                                <option value="BMW X3">BMW X3</option>
+                                <option value="BMW M2">BMW M2</option>
+                                <option value="Ford">Ford Explorer</option>
+                                <option value="Ferrari">Ferrari</option>
+                                <option value="Mercedes-Benz">Mercedes-Benz</option>
+                                <option value="Tesla">Tesla</option>
+                            </select>
+                        </div>
+                        <div class="labels">
+                            <label for="Picking-up-location">Picking up location</label>
+                            <input style="font-size: 19px;" type="text" placeholder="Airport or anywhere" id="Picking-up-location">
+                        </div>
+                        <div class="labels">
+                            <label for="Picking-up-date">Picking up date</label>
+                            <input style="font-size: 23.5px;" type="date" id="Picking-up-date" value="2024-12-01">
+                        </div>
+                        <div class="labels">
+                            <label for="Returning-date">Returning date</label>
+                            <input style="font-size: 22.5px;" type="date" id="Returning-date" value="2024-12-01">
+                        </div>
+                    </form>
+                    <input type="submit" value="Find Your Car" class="btn">
+                </div>
+            </div>
+        </section>
+        <!-- End-landing Section -->
+    
+        <!--Start-About Section-->
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <p class="subtitle">Luxury Car Rental & Limousine Services</p>
+                <div class="content">
+                    <p>
+                        At Limo, we specialize in providing world-class luxury vehicles for every occasion. Whether you need a high-performance car for a business trip, a limousine for a special event, or just want to ride in style, we have the perfect vehicle for you. 
+                    </p>
+                    <p>
+                        Our fleet includes top brands like BMW, Mercedes-Benz, Tesla, and Ferrari. Our goal is to make your journey unforgettable by combining exceptional vehicles with unparalleled customer service.
+                    </p>
+                    <p>
+                        Experience comfort, style, and sophistication with Limo. Your satisfaction is our top priority. From seamless booking processes to 24/7 customer support, we ensure that your rental experience is hassle-free and enjoyable.
+                    </p>
+                    <p>
+                        We pride ourselves on maintaining the highest standards in vehicle maintenance and cleanliness. Every car is thoroughly inspected to guarantee safety, reliability, and your peace of mind. Whether you’re traveling for business or leisure, we’ve got you covered.
+                    </p>
+                    <p>
+                        Discover the difference with Limo – where luxury meets convenience. Join thousands of satisfied customers who trust us for their transportation needs.
+                    </p>
+                    <a href="#" class="learn-more-btn">Learn More</a>
+                </div>
+            </div>
+        </section>
+        <!-- End-About Section-->
+
+        <!--Start-Cars Section-->
+        <section id="cars" class="cars">
+            <div class="container">
+                <h2>find by type</h2>
+            </div>
+            <div class="buttons">
+                <button class="filter-btn" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="coupe">Coupe</button>
+                <button class="filter-btn" data-filter="sedan">Sedan</button>
+                <button class="filter-btn" data-filter="suv">SUV</button>
+            </div>
+            <div class="grid">
+                <!-- Row 1 -->
+                <div class="card">
+                    <img src="images/type1.jpg" alt="Jeep">
+                    <h3>Jeep</h3>
+                    <p>Starts from $29/day</p>
+                    <button class="rent-btn">Rent now</button>
+                </div>
+                <div class="card">
+                    <img src="images/type2.jpg" alt="Coupe">
+                    <h3>Mercedes</h3>
+                    <p>Starts from $35/day</p>
+                    <button class="rent-btn">Rent now</button>
+                </div>
+                <div class="card">
+                    <img src="images/rental-1.jpg" alt="Sedan">
+                    <h3>Hyundai</h3>
+                    <p>Starts from $40/day</p>
+                    <button class="rent-btn">Rent now</button>
+                </div>
+                <div class="card">
+                    <img src="images/rental-2.jpg" alt="SUV">
+                    <h3>Mercedes</h3>
+                    <p>Starts from $50/day</p>
+                    <button class="rent-btn">Rent now</button>
+                </div>
+                <!-- Row 2 -->
+                <div class="card">
+                    <img src="images/rental-3.jpg" alt="Convertible">
+                    <h3>BMW</h3>
+                    <p>Starts from $60/day</p>
+                    <button class="rent-btn">Rent now</button>
+                </div>
+                <div class="card">
+                    <img src="images/rental-4.jpg" alt="Truck">
+                    <h3>Jeep</h3>
+                    <p>Starts from $45/day</p>
+                    <button class="rent-btn">Rent now</button>
+                </div>
+                <div class="card">
+                    <img src="images/rental-5.jpg" alt="Van">
+                    <h3>Range Rover</h3>
+                    <p>Starts from $55/day</p>
+                    <button class="rent-btn">Rent now</button>
+                </div>
+                <div class="card">
+                    <img src="images/rental-6.jpg" alt="Luxury">
+                    <h3>Ford</h3>
+                    <p>Starts from $75/day</p>
+                    <button class="rent-btn">Rent now</button>
+                </div>
+            </div>
+        </section>
+        <!--End-Cars Section-->
+
+        <!--Start-blog Section-->
+        <section id="blog" class="blog">
+            <div class="container">
+                <h2>Our Recent Posts</h2>
+                <div class="posts">
+                    <div class="post">
+                        <img src="images/blog1.jpg" alt="Blog Post 1">
+                        <h3>Luxury Cars for Every Occasion</h3>
+                        <p>Discover why luxury cars are perfect for special events and business trips. Learn about top picks for comfort and style.</p>
+                        <a href="#" class="read-more-btn">Read More</a>
+                    </div>
+                    <div class="post">
+                        <img src="images/blog2.jpg" alt="Blog Post 2">
+                        <h3>Tips for Renting a Car</h3>
+                        <p>Get the most out of your car rental experience with our expert tips. Save money and enjoy a hassle-free process.</p>
+                        <a href="#" class="read-more-btn">Read More</a>
+                    </div>
+                    <div class="post">
+                        <img src="images/blog3.jpg" alt="Blog Post 3">
+                        <h3>Electric Cars: The Future of Travel</h3>
+                        <p>Explore the benefits of electric vehicles and why they are a great choice for eco-conscious travelers.</p>
+                        <a href="#" class="read-more-btn">Read More</a>
+                    </div>
+                </div>
+                <button class="read-blogs-btn">Read Blogs</button>
+            </div>
+        </section>
+        <!--End-blog Section-->
+
+        <!-- Start-Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p class="subtitle">We'd love to hear from you!</p>
+                <div class="contact-form">
+                    <form action="#" method="POST">
+                        <div class="labels">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your full name" required>
+                        </div>
+                        <div class="labels">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Your email address" required>
+                        </div>
+                        <div class="labels">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Your phone number" required>
+                        </div>
+                        <div class="labels">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Your message" rows="6" required></textarea>
+                        </div>
+                        <div class="submit-btn">
+                            <input type="submit" value="Send Message" class="btn">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- End-Contact Section -->
+
+        <footer>
+            <div class="container">
+                <div class="footer-logo">
+                    <a href="index.html"><img src="images/logo2.png" alt="Logo"></a>
+                </div>
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#cars">Cars</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <ul>
+                        <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <p><strong>Contact Us:</strong></p>
+                    <p>Email: info@limo.com</p>
+                    <p>Phone: +962 (06) 123-456</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Limo. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </body>
+</html>
